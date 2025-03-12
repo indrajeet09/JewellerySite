@@ -1,0 +1,47 @@
+/* CartPage.css */
+
+.cart {
+    margin-top: 100px;
+}
+
+h2 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    font-style: normal;
+}
+
+.cart p {
+    margin-left: 62%; /* Instead of fixed value, use relative positioning */
+    transform: translateX(-50%); /* Center align horizontally */
+}
+
+.add1 {
+    background-color: #a987a2; /* Red */
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Adjust padding to increase button size */
+    text-align: center;
+    text-decoration: none;
+    display: block; /* Change from inline-block to block */
+    font-size: 15px; /* Increase font size */
+    margin: 20px auto; /* Center align horizontally with top margin */
+    cursor: pointer;
+    width: 100px;
+    border-radius: 18px;
+}
+
+.add1:hover {
+    background-color: #eea19b; /* Darker Red */
+}
+
+.total-price {
+    font-size: 25px;
+    margin-right: 100px
+   
+}
+
+.cart-item {
+    border-bottom: 1px solid #ccc; /* Adjust the color as needed */
+}

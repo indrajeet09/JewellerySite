@@ -1,0 +1,66 @@
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+
+footer {
+  background-color: #F6F6F8;
+  color: #8787A4;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-info, .footer-links {
+  flex: 1 1 300px;
+  margin: 0 20px;
+}
+
+.footer-info h2, .footer-links h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #222222;
+
+}
+
+.footer-info p, .footer-links p, .footer-info ul, .footer-links ul {
+  margin-bottom: 20px;
+  font-size: 16px;
+  margin-left: 100px;
+  
+}
+
+.footer-links ul, .footer-info ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 180px;
+}
+
+.footer-links ul li, .footer-info ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a, .footer-info ul li a {
+  color: #8787A4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover, .footer-info ul li a:hover {
+  color: #6BD1E2;
+}
+
+.footer-info p i {
+  margin-right: 5px;
+}
+
+.copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  text-align: center;
+}
+.copy span{
+  padding: 10px;
+  color: #a987a2;
+}

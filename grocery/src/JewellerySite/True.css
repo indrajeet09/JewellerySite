@@ -1,0 +1,64 @@
+.heading{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+  }
+  
+.diamond-image {
+    width: 30%; /* Adjust width as needed */
+    margin-bottom: 20px; /* Adjust margin-bottom for desired spacing */
+  }
+
+
+
+
+.offerimg {
+  width: 100%; /* Ensure the video takes the full width of its container */
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the video horizontally */
+}
+
+.offerimg img{
+  margin-top: 50px;
+  width: 100%; /* Make the video responsive */
+  height: auto; /* Allow the height to adjust proportionally */
+}
+
+
+
+
+
+
+
+
+
+
+.button {
+  background-color: #eea19b;
+  color: white;
+  width: 30%;
+  height: 50px;
+  margin: 0 auto; /* Center the div horizontally */
+  border-radius: 5px;
+  border-bottom: none;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  text-decoration: none !important; 
+  transition: opacity 0.3s ease;/* Remove underline */
+}
+
+.button:hover {
+  opacity: 0.7; /* Decrease opacity on hover */
+}
+
+@media (max-width: 768px) {
+  .button {
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+  }
+}

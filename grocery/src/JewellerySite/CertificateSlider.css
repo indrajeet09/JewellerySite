@@ -1,0 +1,27 @@
+.w-100{
+    border-radius: 10px;
+}
+
+.head{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.labimage{
+    margin-top: 50px;
+}
+.videocard{
+    margin-top: 50px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 40px;
+    margin-right:  0px;
+    flex: 1;
+    object-fit: cover;
+   
+}
+
+.videocard video{
+    object-fit: cover;
+    border-radius: 10px;
+}

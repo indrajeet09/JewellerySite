@@ -1,0 +1,95 @@
+.heading {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .Ring,
+  .bing {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Add space between items horizontally */
+    border-radius: 20px;
+    margin: 10px auto; /* Add space vertically */
+    max-width: 1200px; /* Adjust as needed */
+  }
+  
+  
+  .sing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .image-title {
+    position: absolute;
+    font-weight: bold;
+    font-size: larger;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .image-title1 {
+    position: absolute;
+    font-weight: bold;
+    font-size: larger;
+    bottom: 30px;
+    left: 80%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .ping {
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: #fef6f1;
+    text-align: center;
+  }
+  
+  .ping img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+  }
+  
+  .bespoke {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .video-container {
+    width: 100%; /* Ensure the video takes the full width of its container */
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the video horizontally */
+  }
+  
+  .video-container video {
+    width: 100%; /* Make the video responsive */
+    height: auto; /* Allow the height to adjust proportionally */
+  }
+  
+
+  .image-container1 {
+    position: relative;
+    width: 100%;
+    max-width: 1020px; /* Adjust as per your design */
+    margin: auto; /* Centers the image */
+  }
+  
+  .image-container1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  

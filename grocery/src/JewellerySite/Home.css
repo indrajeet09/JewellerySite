@@ -1,0 +1,53 @@
+.home{
+  margin-top: 50px;
+}
+
+.homeimg{
+  height: 700px;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .homeimg {
+    max-height: 300px; /* Adjust max height for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .homeimg {
+    max-height: 200px; /* Further adjust max height for even smaller screens */
+  }
+}
+
+.cardhead{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card {
+  
+    margin: 10px; /* Add margin for spacing between cards */
+    padding: 25px; /* Add padding to create a gap between the content and the border */
+    box-sizing: border-box; /* Include padding in the total width of the card */
+  }
+  
+.container {
+    margin-top: 20px; /* Add margin to create a gap between each container */
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+   margin-right: 40px;
+  }
+  .card {
+    margin: 0 auto;
+    text-align: center; /* Center the content horizontally */
+  }
+  
+  .card img {
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 70%;
+    height: auto;
+  }
+  

@@ -1,0 +1,25 @@
+.ship{
+    margin-top: 100px;
+}
+.container1 {
+    
+    max-width: 30em; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Centers the container horizontally */
+    text-align: left; /* Aligns content from left to right */
+  }
+  
+  .container1 p {
+    line-height: 1.6; /* Adjust line height as needed */
+    word-wrap: break-word;
+  }
+  
+  .container1 ol {
+    padding-left: 0;
+    counter-reset: item;
+  }
+  
+  .container1 li {
+    margin-bottom: 1em; /* Adjust spacing between list items as needed */
+  }
+  
+ 

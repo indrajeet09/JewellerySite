@@ -1,0 +1,154 @@
+/* products */
+:root{
+  --primary-color: #3bb77e;
+  --secondary :#ffba43;
+  --bg: #e2f9ee;
+  --black: #1c2137;
+  --white: #fff;
+  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+*{
+  font-family: 'Roboto', sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+  width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: var(--primary-color);
+  border-radius: 5rem;
+}
+.heading{
+  text-align: center;
+  padding: 1.2rem 0;
+  margin-bottom: 3rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-size: 4rem;
+}
+.heading span{
+  color: var(--secondary);
+  text-transform: uppercase;
+}
+
+.product .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+}
+
+.product .box-container .box{
+  text-align: center;
+  background: var(--white);
+  border-radius: .5rem;
+  box-shadow: var(--box-shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.product .box-container .box .image{
+  height: 35rem;
+  width: 100%;
+  padding: 1.1rem;
+}
+
+.product .box-container .box .image img{
+  height: 100%;
+  width: 100%;
+  border-radius: .5rem;
+  object-fit: cover;
+}
+
+.product .box-container .box .content{
+  padding: 2rem;
+  padding-top: 0;
+}
+
+.product .box-container .box .content h3{
+  color: var(--black);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.product .box-container .box .content .price{
+  display: inline-block;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.product .box-container .box .content .stars{
+  padding: 1rem 0;
+}
+
+.product .box-container .box .content .stars i{
+  font-size: 1.7rem;
+  color: var(--secondary);
+}
+
+
+
+.product .box-container .box .content .fa-shopping-cart:hover,
+.product .box-container .box .content .fa-heart:hover,
+.product .box-container .box .content .fa-eye:hover{
+  color: var(--white);
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  transition: .4s linear;
+}
+
+/* end */
+
+
+/* Add this to your existing CSS or create a new CSS file */
+
+
+.add-to-cart-btn {
+  
+  background: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background: #45a049;
+}
+
+.add-to-cart-btn svg {
+  margin: 0 5px;
+}
+
+/* Custom styles for each icon */
+.faShoppingBasket {
+  color: #fff;
+}
+
+.faGrinHeart {
+  color: #fff;
+}
+
+.faEyeSlash {
+  color: #fff;
+}

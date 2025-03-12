@@ -1,0 +1,265 @@
+/* Navbar.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding-top: 70px; /* Add padding to the top of the body equal to the height of the navbar */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #a987a2;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  z-index: 1000; /* Ensure the navbar stays on top of other content */
+}
+
+
+.navbar-container {
+  display: flex;
+  flex-direction: column; /* Change flex direction to column */
+  align-items: center; /* Center items horizontally */
+  position: relative; /* Set position relative to allow absolute positioning of children */
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: absolute;
+  top: 20px;
+  left: 70px;
+}
+
+.social-icon {
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+
+}
+.site-name {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 20px;
+  border-bottom: 0.1px solid white;
+  padding-bottom: 5px;
+}
+
+.nav-items {
+  list-style: none;
+  margin-top: 10px;
+  display: flex; /* Display nav items in a row by default */
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 10px; /* Adjust horizontal spacing between nav items */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+.navbar-icons .icon {
+  color: white;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+
+.hamburger-icon {
+  display: none; /* Hide hamburger icon by default */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 770px) {
+  .nav-items {
+    display: none; /* Hide nav items on smaller screens by default */
+  }
+
+  .social-icons {
+    display: none; /* Hide social icons on smaller screens */
+  }
+
+  .navbar-icons {
+    display: flex; /* Display icons on smaller screens */
+  }
+
+  .hamburger-icon {
+    display: block; /* Display hamburger icon on smaller screens */
+  }
+  .nav-items {
+    transition: transform 0.3s ease; /* Add transition effect to the transform property */
+  }
+  
+  .nav-items.show {
+    display: flex; /* Show nav items when the show class is applied */
+    flex-direction: column;
+    justify-content: space-between; /* Align items with space between */
+    background-color: #a987a8; /* Match navbar background color */
+    position: absolute; /* Position the nav items absolutely */
+    top: 60px; /* Adjust top spacing */
+    right: 0;
+    width: 40%; /* Occupy full width */
+    padding: 15px; /* Add padding */
+    box-sizing: border-box; /* Include padding in width calculation */
+    transform: translateX(0); /* Initial position */
+  }
+  
+  .nav-items.hide {
+    transform: translateX(100%); /* Move nav items off screen to the right */
+  }
+  
+  
+  .nav-item {
+    margin: 10px 0; /* Add margin between each nav item */
+  }
+  
+}
+
+/* Media query for smaller screens (< 650px) */
+@media screen and (max-width: 650px) {
+  .site-name {
+    font-size: 1.5em; /* Decrease font size of site name */
+    margin-top: 10px; /* Adjust top margin */
+    text-align: left; /* Align site name to the left */
+    margin-left: 20px; /* Add left margin */
+    border-bottom: none; /* Remove bottom border */
+    padding-bottom: 0; /* Remove bottom padding */
+  }
+
+  .social-icons {
+    display: none; /* Hide social icons on smaller screens */
+  }
+
+  .navbar-icons {
+    display: flex; /* Display icons on smaller screens */
+  }
+
+  .nav-items.show {
+    top: 50px; /* Adjust top spacing */
+  }
+
+  .navbar-container {
+    justify-content: flex-start; /* Align items to the left */
+    align-items: flex-start; /* Align items to the left */
+ }
+}
+
+
+
+.nav-item:hover {
+  transform: scale(1.1);/* Change the background color on hover */
+  color: #333; /* Change the text color on hover */
+}
+
+
+/* Navbar.css */
+
+.cart-icon {
+  transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.cart-icon:hover {
+  transform: scale(1.4); /* Scale up the icon on hover */
+}
+/* Navbar.css */
+
+/* Navbar.css */
+
+.social-icon {
+  color: white; /* Default color for social icons */
+  margin-right: 10px; /* Add some spacing between icons */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Define hover styles for each social icon individually */
+.social-icon:hover {
+  transform: scale(1.3); /* Default color on hover for icons other than specified */
+}
+
+.social-icon.facebook:hover {
+  color: blue; /* Hover color for Facebook */
+}
+
+.social-icon.whatsapp:hover {
+  color: green; /* Hover color for WhatsApp */
+}
+
+.social-icon.twitter:hover {
+  color: lightblue; /* Hover color for Twitter */
+}
+
+.social-icon.telegram:hover {
+  color: navy; /* Hover color for Telegram */
+}
+
+.social-icon.pinterest:hover {
+  color: #bd081c; /* Hover color for Pinterest */
+}
+
+.social-icon.instagram:hover {
+  color: maroon; /* Hover color for Instagram */
+}
+
+.cart-link {
+  position: relative; /* Make the cart link container position relative */
+}
+
+.cart-count {
+  position: absolute; /* Position the cart count absolutely */
+  top: -8px; /* Adjust the vertical position */
+  right: -8px; /* Adjust the horizontal position */
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 770px) {
+  .cart-count {
+    top: -6px; /* Adjust the vertical position for smaller screens */
+    right: -6px; /* Adjust the horizontal position for smaller screens */
+  }
+}
+
+
+
+
+
+
+.search-box-container {
+  position: relative;
+}
+
+.search-box {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 18px;
+  width: 180px; 
+}
+
+.close-icon {
+  position: absolute;
+  right: 8px;
+  top: 35%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #999;
+}
+
